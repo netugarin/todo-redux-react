@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #edeef0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  height: 600px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  margin-top: 10%;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+.app--title {
+  margin-top: 30px;
+  font-size: 47px;
+}
+
+.notes-list {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 45px 0 30px 0;
+}
+
+.note--input {
+  height: 50px;
+  width: 300px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.btn {
+  color: white;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.btn_add {
+  background-color: #3371ff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn_add:hover {
+  background-color: #004fff;
+  transition: 0.5s;
+}
+
+.btn_delete {
+  background-color: #f80d21;
+  padding: 4px 10px 4px 10px;
+  border-radius: 5px;
+}
+
+.btn_delete:hover {
+  background-color: #c50010;
+  transition: 0.5s;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.note--text {
+  font-family: inherit;
+  font-weight:  400;
+  font-size: 17px;
+  text-align: center;
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
